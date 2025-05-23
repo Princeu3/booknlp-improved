@@ -16,8 +16,16 @@ from html import escape
 import time
 from pathlib import Path
 import urllib.request 
+import ssl
 import pkg_resources
 import torch
+
+# Fix SSL certificate verification issues on macOS
+try:
+    ssl._create_default_https_context = ssl._create_unverified_context
+except AttributeError:
+    # Python version doesn't support this, ignore
+    pass
 
 class EnglishBookNLP:
 

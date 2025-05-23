@@ -1,0 +1,67 @@
+# Virtual environments
+booknlp_env/
+venv/
+env/
+.env
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyTorch models and data
+booknlp_models/
+*.model
+*.pkl
+*.pth
+
+# Example outputs (keep the structure but not the generated files)
+examples/test_output/
+examples/alice_output/
+examples/*_output/
+examples/test_alice.txt
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+*.out
+
+# Temporary files
+*.tmp
+*.temp 
